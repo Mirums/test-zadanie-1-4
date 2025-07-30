@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+  height: 100%
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  margin: 0;
+  height: 100%
+  }
+button {
+  all: unset;
+  cursor: pointer; 
+  }
+ul{
+  all: unset;
+}
+p{
+  all: unset;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url(fonts/TTLakes-Regular.woff);
+  font-weight: 400; 
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes";
+  src: url(fonts/TTLakes-Bold.woff);
+  font-weight: 700; 
+  font-style: normal;
+}
+.page{
+  display: flex;
+  font-family: "TTLakes";
+  width: 320px;
+  min-height: 100%;
+  }
+.nav-menu{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 0px 52px 0 #0E185033;
+  }
+.nav-menu__header{
+  margin-left: 24px;
+  margin-top: 23px;
+  margin-bottom: 53px;
+  margin-right: 24px;
+  }
+.buttons{
+  display: flex;
+  gap: 16px;
+  }
+.buttons__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+.buttons__button--pink-circle{
+  border-radius: 50%;
+  background-color: #FF3E79;
+  width: 40px;
+  height: 40px;
+  }
+.buttons__button--search{
+  margin-left: auto;
+  }
+.service-list{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+ .service-list__button{
+  position: relative;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+ }
+ .service-list__button:hover{
+  color: #7E7E82;
+  transition-duration: 0.5s;
+ }
+ .service-list__button::before{
+   content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-image: url("pictures/highlight.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+ }
+  .service-list__button:hover::before{
+    transform: translateX(8px);
+    transition-duration: 0.5s;
+  }
+.nav-menu__footer{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-left: 24px;
+  padding-bottom: 32px;
+}
+.nav-menu__footer-number{
+  font-size: 24px;
+}
+.nav-menu__footer-mail{
+  margin-top: 16px;
+}
+.nav-menu__footer-number{
+  margin-top: 12px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+language-switcher{
+  display: flex;
+  gap: 7px;
+}
+.buttons__button--pink-circle:hover{
+  filter: grayscale(50%);
+  transition-duration: 1s;
+}
+.language-switcher__button:hover{
+color: #7E7E82;
+transition-duration: 1s;
+}
